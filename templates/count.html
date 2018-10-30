@@ -1,0 +1,13 @@
+<h1>There are {{value}} words in the text</h1>
+<br>
+<a href = "{% url 'home' %}">Start again</a>
+<br> 
+<a href= "{% url 'about' %}">ABOUT</a>
+<h1>Original Text:</h1>
+<br>
+{{fulltext}}
+<br>
+{% for word,vals in max_val %}
+{{word}}:{{vals}}
+<br>
+{% endfor %}
